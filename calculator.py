@@ -55,10 +55,10 @@ class CalculatorGUI:
                 result = eval(expression)
                 self.display.delete(0, tk.END)
                 self.display.insert(0, str(result))
-            except:
+            except Exception as err:
                 self.display.delete(0, tk.END)
                 self.display.insert(0, 'Error')
-                raise
+                raise err
         elif text == 'C':
             self.display.delete(0, tk.END)
         else:
