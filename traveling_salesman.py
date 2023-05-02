@@ -74,4 +74,4 @@ def genetic_algorithm():
 
 # Run the genetic algorithm and print the best solution
 best_solution = genetic_algorithm()
-print("Best solution:", best_solution)
+print("Best solution: ", best_solution)
