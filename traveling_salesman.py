@@ -24,7 +24,7 @@ def calculate_fitness(solution):
 # Define a function to generate an initial population of candidate solutions
 def generate_initial_population():
     population = []
-    for i in range(population_size):
+    for _ in range(population_size):
         solution = list(range(len(distance_matrix)))
         random.shuffle(solution)
         population.append(solution)
@@ -57,7 +57,7 @@ def crossover(parent1, parent2):
 # Define the main genetic algorithm function
 def genetic_algorithm():
     population = generate_initial_population()
-    for generation in range(generations):
+    for _ in range(generations):
         population_fitness = []
         for solution in population:
             population_fitness.append(calculate_fitness(solution))
