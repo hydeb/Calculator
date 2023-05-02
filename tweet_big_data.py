@@ -29,4 +29,4 @@ print('Accuracy:', accuracy)
 new_tweets = ['This movie is amazing!', 'I hate waiting in line', 'The weather is perfect today']
 new_tweets_vec = vectorizer.transform(new_tweets)
 predictions = clf.predict(new_tweets_vec)
-print('Predictions:', predictions)
+print('Predictions: ', predictions)
