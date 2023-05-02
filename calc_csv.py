@@ -10,8 +10,8 @@ def calculate(expression):
         expression = expression.replace('pi', str(math.pi))
         result = eval(expression)
         return str(result)
-    except Exception as e:
-        print(e)
+    except Exception as error:
+        print(error)
         return 'Error'
 
 # Read in the calculations from the CSV file
