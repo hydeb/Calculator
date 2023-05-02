@@ -58,6 +58,7 @@ class CalculatorGUI:
             except:
                 self.display.delete(0, tk.END)
                 self.display.insert(0, 'Error')
+                raise
         elif text == 'C':
             self.display.delete(0, tk.END)
         else:
